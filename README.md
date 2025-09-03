@@ -49,3 +49,14 @@ npx allure generate allure-results --clean -o allure-report
 
 # Open report
 npx allure open allure-report
+
+Notes:
+ChatGPT was used to help structure feature files, page object files, and set up Allure reporting.
+
+Future Improvements
+
+Fix Allure reporting (tests not displaying).
+
+Add negative test scenarios.
+
+Set up CI/CD (Jenkins) for automated runs.
