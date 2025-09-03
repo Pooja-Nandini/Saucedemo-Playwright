@@ -1,0 +1,282 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-in-to-the-saucelabs;login-with-valid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 8,
+        "name": "Login with valid credentials",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "user open the login page",
+            "match": {
+              "location": "steps\\login.step.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2734813200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "user login with \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "location": "steps\\login.step.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 169502199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "user should land on the products page",
+            "match": {
+              "location": "steps\\login.step.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3495600400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-in-to-the-saucelabs;filter-the-products,-add-products-to-the-cart",
+        "keyword": "Scenario Outline",
+        "line": 30,
+        "name": "Filter the products, add products to the cart",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "user is on the products page with \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "location": "steps\\products.step.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3760733099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "user select any \"Price (low to high)\" from the dropdown",
+            "match": {
+              "location": "steps\\products.step.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1055777500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the products should display accordingly",
+            "match": {
+              "location": "steps\\products.step.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9043599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "add the products to the cart",
+            "match": {
+              "location": "steps\\products.step.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99806300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "clicked on the shopping cart",
+            "match": {
+              "location": "steps\\products.step.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73310800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "user is navigated to your cart page",
+            "match": {
+              "location": "steps\\products.step.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4157499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the product labels should display",
+            "match": {
+              "location": "steps\\products.step.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6183000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "clicked on the checkout button",
+            "match": {
+              "location": "steps\\products.step.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43100099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "navigate to checkout your information page",
+            "match": {
+              "location": "steps\\products.step.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3147399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "user fill \"Dore\" \"mon\" \"5555\" details",
+            "match": {
+              "location": "steps\\products.step.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65306099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "click on continue button",
+            "match": {
+              "location": "steps\\products.step.ts:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 72110699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "the user should land on checkout overview page",
+            "match": {
+              "location": "steps\\products.step.ts:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3550899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "the product labels should display",
+            "match": {
+              "location": "steps\\products.step.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6947799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "the total price of the products along with tax display",
+            "match": {
+              "location": "steps\\products.step.ts:67"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12554199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "user click on the finish button",
+            "match": {
+              "location": "steps\\products.step.ts:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31625099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "the thank you banner should display",
+            "match": {
+              "location": "steps\\products.step.ts:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 365948300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-in-to-the-saucelabs",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login in to the Saucelabs",
+    "tags": [],
+    "uri": "features\\endToEnd.feature"
+  }
+]

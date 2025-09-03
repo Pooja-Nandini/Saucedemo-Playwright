@@ -1,0 +1,25 @@
+{
+  "name": "playwright-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js features/**/*.feature --require steps/**/*.ts --require-module ts-node/register --format json:./reports/results.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.3.0",
+    "allure-commandline": "^2.34.1",
+    "allure-cucumberjs": "^3.3.3",
+    "allure-playwright": "^3.3.3",
+    "cucumber-html-reporter": "^7.2.0",
+    "cucumberjs-allure2-reporter": "^1.3.0",
+    "multiple-cucumber-html-reporter": "^3.9.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
